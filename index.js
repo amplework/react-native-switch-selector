@@ -154,6 +154,7 @@ export default class SwitchSelector extends Component {
         <TouchableOpacity
           key={index}
           disabled={disabled}
+          hitSlop={{top: 10, bottom: 10, left: 10, right: 10}}
           style={[
             styles.button,
             isSelected ? selectedTextContainerStyle : textContainerStyle,
